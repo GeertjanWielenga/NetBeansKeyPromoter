@@ -1,4 +1,4 @@
-package com.mycompany.netbeanskeypromoter;
+package com.github.geertjanwielenga.netbeanskeypromoter;
 
 import java.awt.Component;
 import java.util.logging.LogRecord;
