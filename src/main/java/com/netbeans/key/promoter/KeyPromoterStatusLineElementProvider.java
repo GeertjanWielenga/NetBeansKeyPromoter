@@ -10,6 +10,7 @@ import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JMenuItem;
+import org.netbeans.api.annotations.common.StaticResource;
 import org.openide.awt.Mnemonics;
 import org.openide.awt.NotificationDisplayer;
 import org.openide.awt.StatusLineElementProvider;
@@ -18,7 +19,7 @@ import org.openide.util.lookup.ServiceProvider;
 @ServiceProvider(service = StatusLineElementProvider.class, position = 0)
 public class KeyPromoterStatusLineElementProvider implements StatusLineElementProvider {
 
-	private final Logger logger = Logger.getLogger("org.netbeans.ui.actions");
+	private static final Logger logger = Logger.getLogger("org.netbeans.ui.actions");
 
 	private JLabel label;
 	private Action action;
@@ -81,9 +82,12 @@ public class KeyPromoterStatusLineElementProvider implements StatusLineElementPr
 			}
 		});
 	}
+        
+        @StaticResource
+        private static final String IMAGE = "com/netbeans/key/promoter/tip.gif";
 
 	private void displayMessageInPopupBallon(String message) {
-		NotificationDisplayer.getDefault().notify("You could use shortcut instead", new ImageIcon("/org/nb/kp/car.png"), message, new ActionListener() {
+		NotificationDisplayer.getDefault().notify("You could use shortcut instead", new ImageIcon(IMAGE), message, new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
