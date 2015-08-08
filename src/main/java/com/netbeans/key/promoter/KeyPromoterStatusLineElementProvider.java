@@ -1,4 +1,4 @@
-package com.github.geertjanwielenga.netbeanskeypromoter;
+package com.netbeans.key.promoter;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;

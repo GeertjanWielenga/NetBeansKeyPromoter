@@ -9,7 +9,7 @@
     <description>Plugin for NetBeans that prompts keyboard shortcut</description>
 		<properties>
 			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-			<nb.platform.version>RELEASE70</nb.platform.version>
+			<nb.platform.version>RELEASE802</nb.platform.version>
 		</properties>
     <build>
         <plugins>
