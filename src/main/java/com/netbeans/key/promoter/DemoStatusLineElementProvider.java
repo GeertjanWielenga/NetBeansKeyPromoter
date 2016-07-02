@@ -29,7 +29,7 @@ public class DemoStatusLineElementProvider implements StatusLineElementProvider 
                     JMenuItem menu = new JMenuItem();
                     Mnemonics.setLocalizedText(menu, action.getValue(Action.NAME).toString());
                     if (doesButtonHasShortcut(action)) {
-                        String shortcut = getShortcut(action.getValue(Action.ACCELERATOR_KEY).toString());
+                        String shortcut = getShortcut(action.getValue(Action.ACTION_COMMAND_KEY).toString());
                         String actionName = getActionName(menu.getText());
                         String message = formatMessage(shortcut, actionName);
                         displayMessage(message);
