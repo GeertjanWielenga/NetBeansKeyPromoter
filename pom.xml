@@ -3,17 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.geertjanwielenga</groupId>
     <artifactId>netbeanskeypromoter</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <version>3.0-SNAPSHOT</version>
     <packaging>nbm</packaging>
     <organization>
         <name>Geertjan Wielenga</name>
         <url>http://blogs.oracle.com/geertjan</url>
     </organization>
     <name>Key Promoter</name>
-    <description>Plugin for NetBeans that prompts keyboard shortcut</description>
+    <description>Plugin for NetBeans that shows current keyboard shortcut in status bar.</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <nb.platform.version>RELEASE802</nb.platform.version>
+        <nb.platform.version>RELEASE81</nb.platform.version>
     </properties>
     <build>
         <plugins>
@@ -66,13 +66,13 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
-            <artifactId>org-openide-filesystems</artifactId>
+            <artifactId>org-openide-util</artifactId>
             <version>${nb.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
-            <artifactId>org-openide-util</artifactId>
-            <version>RELEASE802</version>
+            <artifactId>org-openide-util-lookup</artifactId>
+            <version>RELEASE81</version>
         </dependency>
     </dependencies>
 </project>

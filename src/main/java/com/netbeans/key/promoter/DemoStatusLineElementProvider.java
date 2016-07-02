@@ -11,16 +11,7 @@ import org.openide.awt.Mnemonics;
 import org.openide.awt.StatusLineElementProvider;
 import org.openide.util.lookup.ServiceProvider;
 
-@ServiceProvider(position = 1, service = StatusLineElementProvider.class, supersedes
-        = {
-            "org.netbeans.progress.module.ProgressVisualizerProvider",
-            "org.netbeans.core.ui.notifications.StatusLineElement",
-            "org.netbeans.modules.editor.impl.StatusLineFactories$LineColumn",
-            "org.netbeans.modules.editor.impl.StatusLineFactories$TypingMode",
-            "org.netbeans.core.NbStatusDisplayer",
-            "org.openide.awt.StatusDisplayer",
-            "org.netbeans.core.windows.view.ui.StatusLine"
-        })
+@ServiceProvider(position = 1, service = StatusLineElementProvider.class)
 public class DemoStatusLineElementProvider implements StatusLineElementProvider {
 
     private static final Logger logger = Logger.getLogger("org.netbeans.ui.actions");

@@ -10,10 +10,7 @@ public class DisplayPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         displayLabel = new javax.swing.JLabel();
-
-        org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(DisplayPanel.class, "DisplayPanel.jLabel1.text")); // NOI18N
 
         setBackground(new java.awt.Color(51, 255, 51));
         setLayout(new java.awt.BorderLayout());
@@ -27,7 +24,6 @@ public class DisplayPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel displayLabel;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
     void setText(String text) {
