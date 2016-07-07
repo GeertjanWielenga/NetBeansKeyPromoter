@@ -5,7 +5,6 @@ When you click a menu item or toolbar button, NetBeans will advise you about the
 
 Related documentation: https://blogs.oracle.com/geertjan/entry/key_promoter_plugin_for_netbeans
 
-https://blogs.oracle.com/geertjan_images/resource/nkp.png
-
+<img src="https://blogs.oracle.com/geertjan_images/resource/nkp.png"/>
 
 
